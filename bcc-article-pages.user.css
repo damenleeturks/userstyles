@@ -1,0 +1,44 @@
+/* ==UserStyle==
+	@name           BCC Article pages
+	@namespace      github.com/damenleeturks
+	@version        1.0.0
+	@description    Cleans up the articles display on ByCommonConsent blog.
+	@author         damenleeturks
+==/UserStyle== */
+
+@-moz-document regexp("http(s)?:\\/\\/bycommonconsent.com\\/.+") {
+
+    #sidebar-alt,
+    #sidebar {
+        display: none;
+        /*clear: clear;*/
+    }
+
+    #inner,
+    #content {
+        width: auto !important;
+        max-width: 36em;
+    }
+
+    #inner,
+    .entry-content {
+        margin-top: 3em;
+    }
+
+    body,
+    p,
+    li,
+    blockquote p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    h1.entry-title {
+        font-size: 46px;
+        line-height: 1.25;
+    }
+}

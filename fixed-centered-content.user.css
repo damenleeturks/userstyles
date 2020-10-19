@@ -1,0 +1,20 @@
+/* ==UserStyle==
+	@name           fixed, centered content width
+	@namespace      github.com/damenleeturks
+	@version        1.0.0
+	@description    Used to display content at a fixed, centered width
+	@author         damenleeturks
+	@var          text     bodyWidth "Body Width" 48em
+@var		text	excludedSites	"Excluded Sites"	google|codepen|regextester|github|abstract|medium|dropbox|apple
+
+==/UserStyle== */
+
+@-moz-document regexp("(?!((chrome)(-\\w+)?://|file://)|((.*?)\\b(google|codepen|regextester|github|abstract|medium|dropbox|apple)\\.)).*") {
+
+    body {
+        width: bodyWidth;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
